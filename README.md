@@ -98,8 +98,6 @@ cd your-repo
 
 Create a .env file in the project root with the following content:
 
-# .env file for Agent Automation Script
-
 ```bash
     DEMOBLAZE_USER=your_username
     DEMOBLAZE_PASS=your_password
