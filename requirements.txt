@@ -1,0 +1,6 @@
+playwright
+websocket-client
+python-dotenv
+schedule
+beautifulsoup4
+requests
