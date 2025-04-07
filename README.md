@@ -94,7 +94,7 @@ cd your-repo
     playwright install
 ```
 
-3. **Configuration**
+## Configuration
 
 Create a .env file in the project root with the following content:
 
@@ -108,7 +108,7 @@ Create a .env file in the project root with the following content:
 
 Replace your_username and your_password with your actual Demoblaze credentials. Modify DEMOBLAZE_SEARCH as needed.
 
-3. **Usage:**
+## Usage
 
 The script is contained in agent.py and accepts several command-line arguments:
 
@@ -121,10 +121,8 @@ The script is contained in agent.py and accepts several command-line arguments:
 --schedule-only: (For level3 mode) Run only the periodic task scheduling loop.
 
 Example Commands
-Playwright Mode (Level 1):
 
 ```bash
-
     #Playwright Mode (Level1):
     python3 agent.py --mode=playwright
 
@@ -140,8 +138,10 @@ Playwright Mode (Level 1):
     #Using Proxy and Extension:
     python3 agent.py --mode=playwright --proxy="http://my-proxy.example:8080" --extension="/path/to/extension"
 ```
-How to Test
-Playwright Mode (Level 1)
+
+## How to Test
+
+### Playwright Mode (Level 1)
 
 Run the Script:
 
@@ -163,9 +163,9 @@ The product specified by DEMOBLAZE_SEARCH is searched and added to the cart.
 
 Session cookies are saved to session.json.
 
-```bash
+### Native Mode (Level 2)
 
-    #Native Mode (Level 2)
+```bash
     For macOS (AppleScript):
 
     python3 agent.py --mode=native
@@ -183,7 +183,8 @@ On Windows/Linux, Chrome launches with remote debugging enabled.
 
 The script logs in and searches for the specified product using credentials from your .env file.
 
-Interactive & Scheduled Mode (Level 3)
+### Interactive & Scheduled Mode (Level 3)
+
 Interactive Conversation
 Run:
 
@@ -213,7 +214,8 @@ The Playwright automation flow runs periodically (default every minute).
 
 Console messages indicate each periodic execution.
 
-Testing Bonus Features
+### Testing Bonus Features
+
 CAPTCHA Detection:
 The script automatically checks for CAPTCHA keywords on page load. To test, simulate a CAPTCHA (or modify page content to include "captcha") and observe the prompt.
 
@@ -226,7 +228,8 @@ Test under conditions where elements load slowly (e.g., by throttling your netwo
 Graceful Recovery:
 Force an error (e.g., by temporarily disconnecting your network) and check that the script attempts to reload the page.
 
-Reference to CRUSTDATA Assignment
+## Reference to CRUSTDATA Assignment
+
 This project was developed to meet the requirements of the CRUSTDATA assignment, which specified:
 
 A multi-level automation solution combining both browser-based (Playwright) and native (AppleScript/DevTools) integrations.
@@ -241,7 +244,8 @@ Support for proxy routing and loading custom browser extensions.
 
 All functionalities have been implemented to meet these requirements.
 
-Troubleshooting
+##Troubleshooting
+
 Environment Variables Not Loaded:
 Ensure the .env file is in the same directory as agent.py and that you run the script from that directory.
 
@@ -257,7 +261,7 @@ Confirm that the proxy URL and extension path provided with --proxy and --extens
 Error Messages:
 Check console output and any generated screenshots (e.g., login_failure.png) for troubleshooting details.
 
-License
+## License
 This project is licensed under the MIT License.
 
 
