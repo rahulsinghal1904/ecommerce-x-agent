@@ -242,7 +242,7 @@ Support for proxy routing and loading custom browser extensions.
 
 All functionalities have been implemented to meet these requirements.
 
-##Troubleshooting
+## Troubleshooting
 
 Environment Variables Not Loaded:
 Ensure the .env file is in the same directory as agent.py and that you run the script from that directory.
