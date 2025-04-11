@@ -110,7 +110,7 @@ Replace your_username and your_password with your actual Demoblaze credentials. 
 
 The script is contained in agent.py and accepts several command-line arguments:
 
---mode: Select the automation mode. Options: playwright (Level 1), native (Level 2), level3 (Level 3, interactive/scheduled).
+--mode: Select the automation mode. Options: level1 (Level 1), level2 (Level 2), level3 (Level 3, interactive/scheduled).
 
 --proxy: (Optional) Specify a proxy server (e.g., http://my-proxy.example:8080).
 
@@ -122,10 +122,10 @@ Example Commands
 
 ```bash
     #Playwright Mode (Level1):
-    python3 agent.py --mode=playwright
+    python3 agent.py --mode=level1
 
     #Native Mode (Level 2):
-    python3 agent.py --mode=native
+    python3 agent.py --mode=level2
 
     #Interactive Conversation Mode (Level 3):
     python3 agent.py --mode=level3
@@ -144,7 +144,7 @@ Example Commands
 Run the Script:
 
 ```bash
-    python3 agent.py --mode=playwright
+    python3 agent.py --mode=level1
 ```
 
 Expected Behavior:
@@ -166,11 +166,11 @@ Session cookies are saved to session.json.
 ```bash
     For macOS (AppleScript):
 
-    python3 agent.py --mode=native
+    python3 agent.py --mode=level2
 
     #For Windows/Linux (DevTools Protocol):
 
-    python3 agent.py --mode=native
+    python3 agent.py --mode=level2
 ```
 
 Expected Behavior:
