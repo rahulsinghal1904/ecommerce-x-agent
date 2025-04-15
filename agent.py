@@ -12,6 +12,7 @@ import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import json
+from security import safe_command
 
 load_dotenv()
 
@@ -284,7 +285,7 @@ end tell'''
         if self.extension_path:
             cmd.append(f"--load-extension={self.extension_path}")
         print(f"Using command: {' '.join(cmd)}")
-        subprocess.Popen(cmd)
+        safe_command.run(subprocess.Popen, cmd)
         print("Waiting for Chrome to open...")
         time.sleep(10)
         subprocess.run(['osascript', '-e', 'tell application "Google Chrome" to activate'])
@@ -432,7 +433,7 @@ class WindowsLinuxNativeAgent:
         if self.extension_path:
             cmd.append(f"--load-extension={self.extension_path}")
         print(f"Launching Chrome for Windows/Linux with command: {' '.join(cmd)}")
-        self.chrome_process = subprocess.Popen(cmd)
+        self.chrome_process = safe_command.run(subprocess.Popen, cmd)
         time.sleep(5)
         try:
             resp = requests.get(f"http://127.0.0.1:{self.debug_port}/json")
