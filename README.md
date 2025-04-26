@@ -1,4 +1,4 @@
-# E-commerce Agent Automation Script
+# CrustBuild Challenge
 
  The script, contained in `agent.py`, implements multiple automation approaches and advanced features including:
 
