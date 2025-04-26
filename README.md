@@ -1,6 +1,6 @@
 # E-commerce Agent Automation Script
 
-This project provides a comprehensive, cross-platform automation solution developed as part of the CRUSTDATA assignment. The script, contained in `agent.py`, implements multiple automation approaches and advanced features including:
+ The script, contained in `agent.py`, implements multiple automation approaches and advanced features including:
 
 - **Level 1: Playwright Automation** for browser-based tasks (login, product search, cart interaction).
 - **Level 2: Native Browser Integration** using AppleScript on macOS and the DevTools Protocol on Windows/Linux.
