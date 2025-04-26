@@ -1,4 +1,4 @@
-# Crustdata Build Agent Automation Script
+# E-commerce Agent Automation Script
 
 This project provides a comprehensive, cross-platform automation solution developed as part of the CRUSTDATA assignment. The script, contained in `agent.py`, implements multiple automation approaches and advanced features including:
 
