@@ -1,4 +1,4 @@
-# CrustData Build Challenge
+# E-Commerce AI Agent
 
  The script, contained in `agent.py`, implements multiple automation approaches and advanced features including:
 
@@ -25,7 +25,6 @@
   - [Native Mode (Level 2)](#native-mode-level-2)
   - [Interactive & Scheduled Mode (Level 3)](#interactive--scheduled-mode-level-3)
   - [Testing Bonus Features](#testing-bonus-features)
-- [Reference to CRUSTDATA Assignment](#reference-to-crustdata-assignment)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 
@@ -226,9 +225,7 @@ Test under conditions where elements load slowly (e.g., by throttling your netwo
 Graceful Recovery:
 Force an error (e.g., by temporarily disconnecting your network) and check that the script attempts to reload the page.
 
-## Reference to CRUSTDATA Assignment
-
-This project was developed to meet the requirements of the CRUSTDATA assignment, which specified:
+This project was developed to meet the requirements which specified:
 
 A multi-level automation solution combining both browser-based (Playwright) and native (AppleScript/DevTools) integrations.
 
