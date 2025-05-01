@@ -8,10 +8,10 @@ import subprocess
 import time
 import sys
 import tempfile
-import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import json
+from security import safe_requests
 
 load_dotenv()
 
@@ -435,7 +435,7 @@ class WindowsLinuxNativeAgent:
         self.chrome_process = subprocess.Popen(cmd)
         time.sleep(5)
         try:
-            resp = requests.get(f"http://127.0.0.1:{self.debug_port}/json")
+            resp = safe_requests.get(f"http://127.0.0.1:{self.debug_port}/json")
             targets = resp.json()
             if targets:
                 ws_url = targets[0].get("webSocketDebuggerUrl", None)
